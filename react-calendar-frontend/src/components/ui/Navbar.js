@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { startLogout } from '../../actions/auth';
-
 export const Navbar = () => {
 
     const dispatch = useDispatch();
@@ -16,7 +15,6 @@ export const Navbar = () => {
             <span className="navbar-brand">
                 { name }
             </span>
-            
             <button 
                 className="btn btn-outline-danger"
                 onClick={ handleLogout }
